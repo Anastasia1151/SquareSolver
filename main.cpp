@@ -67,9 +67,9 @@ void testFromFile() {
     double a = 0, b = 0, c = 0, real_x1 = 0, real_x2 = 0;
     int real_nRoots = 0, number_of_test = 0;
 
-    for ( int i = 1; i <= 1; i++ ){
-        fscanf(file, "%lg %lg %lg %d %lg %lg %d", &a, &b, &c, &real_nRoots, &real_x1, &real_x2, &number_of_test);
 
+    for ( int i = 1; i <= 11; i++ ){
+        fscanf(file, "%lg %lg %lg %d %lg %lg %d", &a, &b, &c, &real_nRoots, &real_x1, &real_x2, &number_of_test);
         oneTest(a, b, c,  real_nRoots, real_x1, real_x2, number_of_test);
     }
 

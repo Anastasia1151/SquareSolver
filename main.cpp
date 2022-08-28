@@ -70,6 +70,7 @@ void testFromFile() {
 
     for ( int i = 1; i <= 11; i++ ){
         fscanf(file, "%lg %lg %lg %d %lg %lg %d", &a, &b, &c, &real_nRoots, &real_x1, &real_x2, &number_of_test);
+        printf("%lg %lg %lg %d %lg %lg %d\n", a, b, c, real_nRoots, real_x1, real_x2, number_of_test);
         oneTest(a, b, c,  real_nRoots, real_x1, real_x2, number_of_test);
     }
 
